@@ -1,0 +1,1 @@
+This is basically a clone of the google homepage which i am trying out on the basis of the info i have learned through the odin project

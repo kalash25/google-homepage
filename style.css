@@ -1,0 +1,101 @@
+html{
+    width: 100%;
+    height:100%;
+}
+body{
+    margin:0px;
+    width: 100%;
+    height:100%;
+}
+
+.image{
+    margin-top:112px;
+}
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li{
+    /*display:inline;*/
+    float:right;
+
+
+}
+li a {
+    display: block;
+    padding: 8px;
+
+  }
+
+.nav-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding-top:10px;
+    padding-right:10px;
+    color: black;
+}
+a{
+    padding: 0px 10px 0px 0px;
+    text-decoration:none;
+    color: black;
+    
+}
+.searcher{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    width:100%;
+    margin-top:30px;
+    height: 100px;
+    display:grid;
+    grid-gap:10px;
+    grid-template: 1fr 1fr / repeat(4,1fr);
+    grid-template-areas: 
+    ". topone topone ."
+    ". bottomone bottomtwo .";
+    
+}
+
+#box{
+    width:100%;
+    grid-area: topone;
+    border-radius: 20px;
+    outline: none;
+    border-width: 1px;
+    border-color: rgba(153, 151, 151, 0.842);
+
+    justify-self:center;
+    max-width:600px;
+}
+
+#button1{
+    grid-area: bottomone;
+    justify-self:end;
+    width: 60%;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    margin-top: 20px;
+
+}
+
+#button2{
+    grid-area: bottomtwo;
+    justify-self:start;
+    width:60%;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    margin-top:20px;
+}
